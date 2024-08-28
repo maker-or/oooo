@@ -8,6 +8,7 @@ import Pdf from './Pdf';
 import { useRouter } from 'next/navigation';
 import { NotesCon } from '../providers/NotesProvider';
 import Notes from './Notes';
+import FileUpload from './Fileupload';
 
 // const FOLDERS = ;
 
@@ -45,19 +46,21 @@ const NewFile = ({
                 setCurrentNotes(`notes${notesCount + 1}`);
                 handlePush();
               }}
-              className="flex items-center flex-col gap-4"
+              className="flex items-center flex-col gap-4  hover:text-blue-400"
             >
-              <div className="flex rounded-xl items-center justify-center border-[1px] border-dashed h-[250px] w-[300px] text-xl">
+              <div className="flex rounded-xl items-center justify-center border-[1px] border-dashed h-[250px] w-[300px] text-xl hover:border-blue-400">
                 +
               </div>
               <p>Create New File</p>
             </button>
-            <button className="flex items-center flex-col gap-4">
+            {/* <button className="flex items-center flex-col gap-4 ">
               <div className="flex items-center rounded-xl justify-center border-[1px] border-dashed h-[250px] w-[300px] text-xl">
                 <FiUpload />
               </div>
               <p>Upload File</p>
-            </button>
+            </button> */}
+            <FileUpload/>
+
           </div>
         </div>
       </div>
@@ -100,7 +103,7 @@ const FileContainer = () => {
         <p className="">Notes</p>
         <button
           onClick={() => setActiveSelection(true)}
-          className="px-3 py-2 rounded-lg bg-orange-600 text-white"
+          className="px-3 py-1 rounded-lg bg-orange-600 text-white"
         >
           +
         </button>

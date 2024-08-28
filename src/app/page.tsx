@@ -8,13 +8,16 @@ import StorageContainer from './components/StorageContainer';
 import Timer from './components/Timer';
 import Todo from './components/Todo';
 import Group from './components/Group';
+import Greeting from './components/Greeting';
 
 export default function Home() {
   return (
-    <div className="w-full max-w-7xl">
+    <div className="w-full max-w-7xl  ">
       {/* <h1 className="absolute text-[10rem] font-bold top-5 left-5 opacity-10 -z-30 ">
         SPHERE
       </h1> */}
+      <Greeting/>
+        {/* <h1 className='text-[3rem] font-medium  text-[#434246] text-center mt-6'>GOOD MORNING</h1> */}
       <Navbar />
       {/* <StorageContainer /> */}
       <Group />

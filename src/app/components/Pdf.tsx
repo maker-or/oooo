@@ -9,7 +9,7 @@ const Pdf = ({ fileName }: { fileName: string }) => {
       target="_blank"
       className="flex flex-col items-center gap-2"
     >
-      <div className="text-red-600">
+      <div className="text-orange-600">
         <BiSolidFilePdf size={100} />
       </div>
       <p>{fileName}</p>

@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import StorageContainer from './StorageContainer';
+import Block from './Block';
 
 const Group = () => {
   return (
@@ -9,7 +10,8 @@ const Group = () => {
         <img src="Sphere.png" alt="" />
       </h1>
       <div className="relative z-10">
-        <StorageContainer />
+        
+        <Block/>
       </div>
     </div>
   );

@@ -7,14 +7,14 @@ const RepoCard = ({ name, url }: { name: string; url: string }) => {
   return (
     <Link
       href={`/repo/data/${url}`}
-      className="flex w-full items-center justify-between p-4 border-[1px] border-white rounded-xl transition-all"
+      className="flex w-full items-center justify-between p-4 border-[1px] border-[#f7eee37f] rounded-xl transition-all text-[1.5rem] "
     >
       <div className="flex gap-4 items-center">
-        <IoFolderOpen />
+        <IoFolderOpen size={36} color='#CAECFC'/>
         <p>{name}</p>
       </div>
       <div className="">
-        <MdArrowOutward />
+        <MdArrowOutward size={48}/>
       </div>
     </Link>
   );

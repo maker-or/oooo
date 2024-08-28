@@ -5,7 +5,7 @@ const Year = () => {
   return (
     <nav className=" py-5">
       <div className="items-center flex">
-        <ul className="inline-flex flex-row  items-center  mx-auto   py-2.5 px-1   rounded-full border text-[#F7EEE3] text-[1.2rem] font-medium">
+        <ul className="inline-flex flex-row  items-center  mx-auto   py-3 px-1   rounded-full border text-[#F7EEE3] text-[1.2rem] font-medium">
           <li className="px-8">
             <Link
               href="/com"

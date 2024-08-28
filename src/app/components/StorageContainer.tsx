@@ -15,13 +15,13 @@ const FOLDERS = [
   },
   {
     name: 'Math',
+    
   },
   {
-    name: 'Desgin',
+    name: 'Math',
+    
   },
-  {
-    name: 'Lab',
-  },
+
 ];
 
 type SetActiveSelectionType = (value: boolean) => void;
@@ -84,10 +84,10 @@ const StorageContainer = () => {
   return (
     <div className="flex flex-col gap-8 w-full">
       <div className="flex justify-between text-2xl">
-        <p className="">Folders</p>
+        <p className="">Files</p>
         <button
           onClick={() => setActiveSelection(true)}
-          className="px-3 py-2 rounded-lg bg-orange-600 text-white"
+          className="px-3 py-1 rounded-lg bg-orange-600 text-white"
         >
           +
         </button>

@@ -5,6 +5,7 @@ import Navbar from '@/app/components/Navbar';
 
 import StorageContainer from '@/app/components/StorageContainer';
 import FileContainer from '@/app/components/FileContainer';
+import Tag from '@/app/components/Tag';
 interface Params {
   subjectId: string; // Adjust the type based on your dynamic segment
 }
@@ -14,6 +15,7 @@ const page = ({ params }: { params: Params }) => {
     <div className="w-full max-w-7xl">
       <div className="w-full max-w-7xl">
         <Navbar />
+        <Tag/>
         <FileContainer />
       </div>
       {/* <h1>Page ID: {params.subjectId}</h1> */}
